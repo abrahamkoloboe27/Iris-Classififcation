@@ -1,5 +1,5 @@
-streamlit==1.30.0
-joblib==1.3.2
-plotly==5.18.0
-pandas==2.2.0
+streamlit
+joblib
+plotly
+pandas
 pycaret

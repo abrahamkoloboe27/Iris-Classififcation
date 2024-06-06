@@ -5,7 +5,15 @@ import plotly.express as px
 
 st.header("Iris Classification", divider="rainbow")
 st.image("images/iris_photo.jpg", use_column_width=True)
-if st.checkbox("Description") : 
+with st.sidebar : 
+        st.markdown("""
+        ## Auteur
+        :blue[Abraham KOLOBOE]
+        * Email : <abklb27@gmail.com>
+        * WhatsApp : +229 91 83 84 21
+        * Linkedin : [Abraham KOLOBOE](https://www.linkedin.com/in/abraham-zacharie-koloboe-data-science-ia-generative-llms-machine-learning)
+                    """)
+if st.toggle("Description") : 
     st.write("Cette application Streamlit permet de classer les iris en utilisant un modèle pré-entraîné.")
     st.markdown("""
     Le jeu de données sur les fleurs d'iris, également appelé jeu de données sur les iris de Fisher, 

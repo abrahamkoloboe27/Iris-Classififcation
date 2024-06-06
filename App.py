@@ -13,7 +13,7 @@ with st.sidebar :
         * WhatsApp : +229 91 83 84 21
         * Linkedin : [Abraham KOLOBOE](https://www.linkedin.com/in/abraham-zacharie-koloboe-data-science-ia-generative-llms-machine-learning)
                     """)
-if st.toggle("Description") : 
+if st.sidebar.toggle("Description") : 
     st.write("Cette application Streamlit permet de classer les iris en utilisant un modèle pré-entraîné.")
     st.markdown("""
     Le jeu de données sur les fleurs d'iris, également appelé jeu de données sur les iris de Fisher, 

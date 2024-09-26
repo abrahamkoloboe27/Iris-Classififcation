@@ -61,7 +61,7 @@ if submit :
         proba_predict = model.predict_proba(pd_dic)
         fig = px.bar(x=['Iris-setosa', 'Iris-versicolor', 'Iris-virginica'], 
                      y=proba_predict[0]*100, labels={'x':'Classe', 'y':'Probabilité'}, 
-                     title='Probabilité de chaque classe', color=['Iris-setosa', 'Iris-versicolor', 'iris-virginica'])
+                     title='Probabilité de chaque classe', color=['Iris-setosa', 'Iris-versicolor', 'Iris-virginica'])
         with col_2 : 
             st.plotly_chart(fig, use_container_width=True)
         st.success(f"Classe prédite : {predicted_class}")
